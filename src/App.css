@@ -25,7 +25,7 @@ body {
 /* .condiv class is for the right side content container*/
 .condiv {
   padding: 100px ;
-  background-color: #282c34;
+  background-color: #f4f5f9;
   flex:var(--condiv-flex);
 }
 
@@ -51,6 +51,50 @@ nav ul li {
 .active {
   font-weight: bolder;
 }
+
+.social {
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  bottom: 60px;
+}
+
+.social i {
+  padding-right: 30px;
+  font-size: 25px;
+  color: #cfcfcf;
+}
+
+.social i:hover {
+  color: #3b3b3b;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 300px;
+  margin: 20px;
+
+}
+
+.subtopic {
+  margin: 10px 10px 30px 10px !important;
+}
+
+p {
+  font-size: var(--fontsize-p);
+}
+
+h1,h2,h3,h4,p {
+  margin: 10px;
+}
+
 /* .App {
   text-align: center;
 }

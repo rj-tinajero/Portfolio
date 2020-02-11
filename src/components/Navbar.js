@@ -10,11 +10,11 @@ class Navbar extends Component {
       }
    }
 
-   activeItem = x => {
+   activeItem = (x) => {
       if(this.state.NavItemActive.length > 0) {
          document.getElementById(this.state.NavItemActive).classList.remove('active');
       }
-      this.setState({'NavItemActive': x}, () => {
+      this.setState({'NavItemActive': x}, () => { console.log(this.state.NavItemActive, "asdvboafb");
          document.getElementById(this.state.NavItemActive).classList.add('active');
       });
    }
