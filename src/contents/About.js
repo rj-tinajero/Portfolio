@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Social from '../components/Social';
 
 class About extends Component {
    render() {
@@ -12,6 +13,7 @@ class About extends Component {
                I’m passionate about building products that better suit the needs of the customer. I recently graduated from Bloc’s Full 
                Stack Web Developer program which taught me the concepts and technologies needed to build applications that are usable in the 
                industry by using modern JavaScript frameworks. </p>
+            <Social />
          </div>
       );
    }
