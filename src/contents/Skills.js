@@ -58,30 +58,13 @@ class Skills extends Component {
    
    render() {
       return(
-         // <div className="condiv skills">
-         //    <h1 classname="subtopic">My Skills</h1>
-            
-         //       {this.state.mySkills.map((value) => { 
-                  
-         //    return   <div className="col-12 col-md-6 col-lg-4 mb-4 mt-4">
-         //                <div className="row">
-         //                   <div className="col-md">
-         //                      {value.icon}<br></br>{value.name}
-         //                   </div>
-                           
-         //                </div>
-         //             </div>
-                  
-         //       })}
-            
-         // </div>
          <div className="condiv skills">
             <h1 className="subtopic">My Skills</h1>
             <div className="container">
                {this.chunkedData.map((row, rowIndex) => {
                   return (<div key={rowIndex} className="row">{
                      row.map((col, colIndex) => {return (<div key={colIndex}
-                        className="col-sm">{col.icon}<br></br>{col.name}</div>)})
+                        className="col-sm">{col.icon}<br></br>{' ' + col.name}</div>)})
                   }
                   </div>)
                })
