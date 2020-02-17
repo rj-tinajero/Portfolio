@@ -14,7 +14,7 @@ class Navbar extends Component {
       if(this.state.NavItemActive.length > 0) {
          document.getElementById(this.state.NavItemActive).classList.remove('active');
       }
-      this.setState({'NavItemActive': x}, () => { console.log(this.state.NavItemActive, "asdvboafb");
+      this.setState({'NavItemActive': x}, () => { 
          document.getElementById(this.state.NavItemActive).classList.add('active');
       });
    }
