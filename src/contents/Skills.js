@@ -28,6 +28,10 @@ class Skills extends Component {
                icon: <i class="fab fa-react fa-4x" style={{color: 'rgb(0, 216, 255)'}}></i>
             },
             {
+               name: 'JAVA',
+               icon: <i class="fab fa-java fa-4x"></i>
+            },
+            {
                name: 'GIT',
                icon: <i class="fab fa-git-alt fa-4x" style={{color: '#ff6b6b'}}></i>
             },
@@ -64,7 +68,7 @@ class Skills extends Component {
                {this.chunkedData.map((row, rowIndex) => {
                   return (<div key={rowIndex} className="row">{
                      row.map((col, colIndex) => {return (<div key={colIndex}
-                        className="col-sm">{col.icon}<br></br>{' ' + col.name}</div>)})
+                        className="col-sm">{col.icon}<br></br>{'   ' + col.name}</div>)})
                   }
                   </div>)
                })
