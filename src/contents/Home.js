@@ -11,7 +11,7 @@ class Home extends Component {
             <img src={profilepic} className="profilepic"></img>
             <ReactTypingEffect className="typingeffect" 
                text={["I'm Richard Tinajero!", 'I am a web developer!', 'Welcome to my site!', 'Feel free to browse around', 'Wow...you still here? :)']}
-               speed={100} eraseDelay={700} />
+               speed={100} eraseDelay={700} typingDelay={1000}/>
             <Social />
          </div>
          
